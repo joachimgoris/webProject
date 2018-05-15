@@ -7,8 +7,30 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="poules/poules.js"></script>
     <script src="stadions/stadions.js"></script>
+    <script>
+            function startTime(){
+                var today = new Date();
+                var nextDay = new Date(today.getFullYear(), 6,14,17,0,0,00);
+                var distance = nextDay - today;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var s = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('clock').innerHTML ="dagen: "+days+" | "+ h+":"+m+":"+s;
+                var t = setTimeout(startTime, 500);
+            }
+    
+            function checkTime(i){
+                if(i<10) {i="0"+i};
+                return i;
+            }
+        </script>
 </head>
-<body>
+<body onload="startTime()">
     <div id="navbar">
             <a id="Home" href="#">Home</a>
             <a id="Ploegen" href="Ploegen.html">Ploegen</a>
@@ -16,5 +38,6 @@
             <a id="Opstelling" href="Opstelling.html">Opstelling</a>
             <a id="Simulatie" href="Simulatie.html">Simulatie</a>
     </div>
+    <div id="clock"></div>
 </body>
 </html>
