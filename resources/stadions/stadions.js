@@ -8,7 +8,7 @@ var stadions = [
 	{lat: 55.820986, long: 49.1587774, name: "Kazan Arena", city: "Kazan", cap: 45105, img: "http://stadiumdb.com/pic-buildings/rus/stadion_rubina_kazan/stadion_rubina_kazan331.jpg"},
 	{lat: 53.2781358, long: 50.235292, name: "Samara Arena", city: "Samara", cap: 44918, img: "http://stadiumdb.com/pic-buildings/rus/samara_arena/samara_arena241.jpg"},
 	{lat: 54.1817979, long: 45.2016627, name: "Mordovia Arnoa", city: "Saransk", cap: 44442, img: "http://stadiumdb.com/pic-buildings/rus/stadion_yubileyniy_saransk/stadion_yubileyniy_saransk271.jpg"},
-	{lat: 55.8177683, long: 37.438174, name: "Otkritie Arena", city: "Moskou, cap: 44000, img: "http://stadiumdb.com/pic-buildings/rus/stadion_spartak/stadion_spartak303.jpg"},
+	{lat: 55.8177683, long: 37.438174, name: "Otkritie Arena", city: "Moskou", cap: 44000, img: "http://stadiumdb.com/pic-buildings/rus/stadion_spartak/stadion_spartak303.jpg"},
 	{lat: 56.8324789, long: 60.5713934, name: "Tsentralnyj Stadion", city: "Yekaterinburg", cap: 35696, img: "http://stadiumdb.com/pic-buildings/rus/tsentralnyi_stadion_ekaterinburg/tsentralnyi_stadion_ekaterinburg245.jpg"},
 	{lat: 54.6980452, long: 20.530098, name: "Stadion Kaliningrad", city: "Kaliningrad", cap: 35212, img: "http://stadiumdb.com/pic-buildings/rus/stadion_kaliningrad/stadion_kaliningrad145.jpg"}
 ]

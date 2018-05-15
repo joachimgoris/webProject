@@ -1,0 +1,26 @@
+a {
+    width: 25%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(50, 50, 50);
+    border: 0;
+    flex-grow: 1;
+}
+#Home {
+    padding: 20px;
+}
+#Ploegen {
+    padding: 20px;
+}
+#Stadions {
+    padding: 20px;
+}
+#Opstelling {
+    padding: 20px;
+}
+#Simulatie {
+    padding: 20px;
+}
+a:hover {
+    color: cornflowerblue;
+}
