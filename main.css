@@ -1,3 +1,6 @@
+body {
+    background-color: gray;
+}
 a {
     width: 25%;
     color: white;
@@ -5,22 +8,22 @@ a {
     background-color: rgb(50, 50, 50);
     border: 0;
     flex-grow: 1;
-}
-#Home {
-    padding: 20px;
-}
-#Ploegen {
-    padding: 20px;
-}
-#Stadions {
-    padding: 20px;
-}
-#Opstelling {
-    padding: 20px;
-}
-#Simulatie {
     padding: 20px;
 }
 a:hover {
     color: cornflowerblue;
+}
+
+#navbar {
+    
+    float:center;
+}
+
+#logo {
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+#clock{
+    float: right;
 }
