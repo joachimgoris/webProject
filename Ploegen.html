@@ -6,17 +6,28 @@
     <title>Ploegen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="resources/ploegen/main.js"></script>
+    <script>
+            var landen = ["test","Placeholder"];
+        function ReadPloegen () {
+        document.getElementById("landenLijst").innerHTML = landen.toString();
+        }
+
+        function AddPloegen(){
+                landen.push(document.getElementById("textName").value);
+                document.getElementById("landenLijst").innerHTML = landen.toString();
+                return false;
+        }
+    </script>
 </head>
-<body>
-        <form id="formPloegen" style="border: 1px; border-color: black; width: 10%">
+<body onload="ReadPloegen()">
+        <form id="formPloegen" style="border: 1px; border-color: black; width: 10%" onsubmit="return AddPloegen()">
                 <label for="textName">Name</label>
                 <input type="text" id="textName" />
                 <label for="shortcodeText">Shortcode</label>
                 <input type="text" id="shortcodeText" />
                 <label for="descriptionText">Beschrijving</label>
                 <input type="text" id="descriptionText" />
-                <input type="submit" id="submitButton" value="Toevoegen"/>
+                <input type="submit" id="submitButton" value="Toevoegen" />
         </form>
         <div id="landenLijst">
 
